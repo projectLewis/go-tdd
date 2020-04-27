@@ -1,9 +1,9 @@
 package main
 
 // Add adds multiple numbers
-func Add(num ...int) (sum int) {
-	for i := 0; i < len(num); i++ {
-		sum += num[i]
+func Add(nums ...int) (sum int) {
+	for _, v := range nums {
+		sum += v
 	}
 	return
 }
